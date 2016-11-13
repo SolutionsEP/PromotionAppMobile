@@ -35,6 +35,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TabHost;
+import android.widget.TabWidget;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -141,13 +142,13 @@ public class MainActivity extends AppCompatActivity
 
         TabHost.TabSpec spec = tabs.newTabSpec("tabHome1");
         spec.setContent(R.id.tab_home1);
-        spec.setIndicator("Lo mas destacado",
+        spec.setIndicator("THE MOST OUTSTANDING",
                             res.getDrawable(R.drawable.ic_menu_share));
         tabs.addTab(spec);
 
         spec = tabs.newTabSpec("tabHome2");
         spec.setContent(R.id.tab_home2);
-        spec.setIndicator("Categorias",
+        spec.setIndicator("CATEGORIES",
                             res.getDrawable(R.drawable.ic_media_play));
         tabs.addTab(spec);
 
@@ -215,13 +216,13 @@ public class MainActivity extends AppCompatActivity
         });
 
         ImageButton nextBtn = (ImageButton)findViewById(R.id.btnNextRest);
-        nextBtn.setImageResource(R.mipmap.siguiente_pagina);
+        nextBtn.setImageResource(R.mipmap.siguiente_pagina_dos);
 
         nextBtn = (ImageButton)findViewById(R.id.btnNextStores);
-        nextBtn.setImageResource(R.mipmap.siguiente_pagina);
+        nextBtn.setImageResource(R.mipmap.siguiente_pagina_dos);
 
         nextBtn = (ImageButton)findViewById(R.id.btnNexDisco);
-        nextBtn.setImageResource(R.mipmap.siguiente_pagina);
+        nextBtn.setImageResource(R.mipmap.siguiente_pagina_dos);
 
 
     }
