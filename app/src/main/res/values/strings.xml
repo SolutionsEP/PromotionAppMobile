@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ProMotion</string>
+    <string name="btn_Aceptar">Aceptar</string>
+    <string name="btn_abrir_ventana">siguiente</string>
+    <string name="welcome_text">Estos son mis posts</string>
+    <string name="Tittle_Notification">ProMotion Notification</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_label">Search</string>
+    <string name="search_hint">Search Me</string>
+    <string name="search">Buscar</string>
+    <string name="title_activity_near">Mas cerca</string>
+    <string name="title_activity_promotion_detail">PromotionDetailActivity</string>
+    <string name="text_share">Descarga ya ProMotion App!! La mejor app para promociones ahora https://play.google.com/store?hl=en</string>
+    <string name="app_description">En ProMotion App podras encontrar las mejores ofertas en promociones publicadas por comercios afiliados a nuestro portal, asi como tambien podras ubicarlos y mucho mas...</string>
+    <string name="contactanos">Puedes contactarnos a por correo electronico o a traves de una simple llamada a nuestra central telefonica:</string>
+    <string name="app_suscribe">Para suscribirte a la cadena de comercios afiliados a ProMotion app debes ingresar a nuestro portal administrativo para realizar el registro de tu comercio y empezar a ofrecer tus mejores servicios y promociones con nosotros.</string>
+    <string name="text_email">En ProMotion App, trabajamos para tu comodidad y bienestar, Ingresa aca tu comentario, critica o propuesta! En la brevedad posible nuestros operadores estaran contactandote de ser necesario.</string>
+    <string name="configuracion">Configuración</string>
+    <string name="version_app">ProMotion App V 1.0.0</string>
+    <string name="condicion">* Recomendado Diariamente</string>
+    <string name="texto_notificaciones">Frecuencia de envio de notificaciones para mis promociones por tienda:</string>
+
+    <string name="start">START</string>
+    <string name="category">CATEGORY</string>
+    <string name="toCloser">TO CLOSER</string>
+    <string name="share">SHARE</string>
+    <string name="us">US</string>
+    <string name="configuration">CONFIGURATION</string>
+    <string name="exit">EXIT</string>
+    <string name="titleShare">Share and contact</string>
+    <string name="titleAdjust">Adjustments</string>
+
+</resources>

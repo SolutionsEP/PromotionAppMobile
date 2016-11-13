@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/configuracion"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:fontFamily="casual"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:text="X"
+            android:textStyle="bold"
+            android:id="@+id/close_window"
+            android:textColor="#FFFFFF"
+            android:fontFamily="casual"
+            android:focusableInTouchMode="true"
+            android:textSize="20dp"
+            android:layout_alignParentEnd="true"
+
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Notificaciones"
+                    android:fontFamily="casual"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/colorAccent" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@mipmap/notification"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:text="@string/texto_notificaciones"
+                    android:fontFamily="casual"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_notify">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="Cada minuto"
+                        android:padding="10dp"
+                        android:fontFamily="casual"
+                        android:id="@+id/radioNotifyMinute"
+                        android:onClick="onRadioNotifyClicked"
+                        android:layout_gravity="clip_vertical" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="Cada hora"
+                        android:padding="10dp"
+                        android:fontFamily="casual"
+                        android:id="@+id/radioNotifyHour"
+                        android:onClick="onRadioNotifyClicked"
+                        android:layout_gravity="clip_vertical" />
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="Diariamente"
+                        android:checked="true"
+                        android:padding="10dp"
+                        android:fontFamily="casual"
+                        android:id="@+id/radioNotifyDay"
+                        android:onClick="onRadioNotifyClicked"
+                        android:layout_gravity="clip_vertical" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:text="@string/condicion"
+                    android:fontFamily="casual"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Actualizaciones"
+                    android:fontFamily="casual"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:text="Actualizar ProMotion App:"
+                    android:fontFamily="casual"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_update">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:fontFamily="casual"
+                        android:text="Actualizar siempre"
+                        android:id="@+id/radioUpdatesEver"
+                        android:checked="true"
+                        android:onClick="onRadioUpdatesClicked"
+                        android:layout_gravity="clip_vertical" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:fontFamily="casual"
+                        android:text="Actualizar solo con red WI-FI"
+                        android:id="@+id/radioUpdatesWifi"
+                        android:onClick="onRadioUpdatesClicked"
+                        android:layout_gravity="clip_vertical" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:fontFamily="casual"
+                        android:text="Nunca actualizar"
+                        android:id="@+id/radioUpdatesNever"
+                        android:onClick="onRadioUpdatesClicked"
+                        android:layout_gravity="clip_vertical" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:text="Version"
+                    android:fontFamily="casual"
+                    android:layout_marginTop="5dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/colorAccent" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:padding="2dp"
+                    android:text="@string/version_app"
+                    android:fontFamily="casual"
+                    android:layout_marginTop="5dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

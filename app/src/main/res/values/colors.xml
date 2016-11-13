@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5a367c</color>
+    <color name="colorPrimaryDark">#222d32</color>
+    <color name="colorAccent">#66b1d1</color>
+    <color name="blueSplash">#caf3f5</color>
+    <color name="sub_type_store">#e1e0e0</color>
+    <color name="green_call">#66d072</color>
+</resources>

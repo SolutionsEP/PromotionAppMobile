@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_layout"
+            android:icon="@mipmap/home_icon"
+            android:title="@string/start"
+            android:fontFamily="casual"/>
+        <item
+            android:id="@+id/nav_stores_layout"
+            android:icon="@mipmap/store_icon"
+            android:title="@string/category"
+            android:fontFamily="casual"/>
+        <item
+            android:id="@+id/nav_near_layout"
+            android:icon="@mipmap/near_ruta_icon"
+            android:title="@string/toCloser"
+            android:fontFamily="casual"/>
+
+
+    </group>
+
+    <item
+        android:title="@string/titleShare"
+        android:fontFamily="casual">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/share_icon"
+                android:title="@string/share"
+                android:fontFamily="casual"/>
+            <item
+                android:id="@+id/nav_about_layout"
+                android:icon="@mipmap/about_icon"
+                android:title="@string/us"
+                android:fontFamily="casual"/>
+        </menu>
+    </item>
+    <item
+        android:title="@string/titleAdjust"
+        android:fontFamily="casual">
+        <menu>
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@mipmap/ajustes_icon"
+                android:title="@string/configuration"
+                android:fontFamily="casual"/>
+            <item
+                android:id="@+id/nav_close"
+                android:icon="@mipmap/salir_icon"
+                android:title="@string/exit"
+                android:fontFamily="casual"/>
+        </menu>
+    </item>
+
+</menu>

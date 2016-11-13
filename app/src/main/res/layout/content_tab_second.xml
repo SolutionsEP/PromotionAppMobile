@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/content_main">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linear_layout_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageButton
+                            android:layout_width="fill_parent"
+                            android:layout_height="200dp"
+                            android:id="@+id/imageButtonRest"
+                            android:src="@drawable/restaurant"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:paddingTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:drawablePadding="-15sp"
+
+                            />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnNextRest"
+                            android:src="@mipmap/siguiente_pagina"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="10dp"
+                            android:background="#00000000"/>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Restaurantes"
+                            android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="10dp"
+                            android:id="@+id/textView" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageButton
+                            android:layout_width="fill_parent"
+                            android:layout_height="200dp"
+                            android:id="@+id/imageButtonShop"
+                            android:src="@drawable/sportshop"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:paddingTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:drawablePadding="-15sp"
+
+                            />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnNextStores"
+                            android:src="@mipmap/siguiente_pagina"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="10dp"
+                            android:background="#00000000"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Tiendas Deportivas"
+                            android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="10dp"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <ImageButton
+                            android:layout_width="fill_parent"
+                            android:layout_height="200dp"
+                            android:id="@+id/imageButtonDisco"
+                            android:src="@drawable/sportshop"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:paddingTop="2dp"
+                            android:layout_marginBottom="2dp"
+                            android:drawablePadding="-15sp"
+
+                            />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/btnNexDisco"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/siguiente_pagina"
+                            android:layout_alignParentStart="false"
+                            android:layout_alignParentEnd="true"
+                            android:paddingRight="10dp"
+                            android:background="#00000000"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Locales Nocturnos"
+                            android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
+                            android:textColor="#FFFFFF"
+                            android:fontFamily="casual"
+                            android:textStyle="bold"
+                            android:layout_alignParentBottom="true"
+                            android:paddingBottom="15dp"
+                            android:paddingLeft="10dp"
+
+                            />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
