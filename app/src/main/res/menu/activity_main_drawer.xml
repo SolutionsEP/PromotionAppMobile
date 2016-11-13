@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/fondo">
 
-    <group android:checkableBehavior="single">
+
+    <group android:checkableBehavior="single"
+        >
         <item
             android:id="@+id/nav_home_layout"
-            android:icon="@mipmap/home_icon"
+            android:icon="@mipmap/circulo"
             android:title="@string/start"
             android:fontFamily="casual"/>
         <item
             android:id="@+id/nav_stores_layout"
-            android:icon="@mipmap/store_icon"
+            android:icon="@mipmap/circulo"
             android:title="@string/category"
             android:fontFamily="casual"/>
         <item
             android:id="@+id/nav_near_layout"
-            android:icon="@mipmap/near_ruta_icon"
+            android:icon="@mipmap/circulo"
             android:title="@string/toCloser"
             android:fontFamily="casual"/>
 
@@ -23,16 +26,17 @@
 
     <item
         android:title="@string/titleShare"
-        android:fontFamily="casual">
+        android:fontFamily="casual"
+        >
         <menu>
             <item
                 android:id="@+id/nav_share"
-                android:icon="@mipmap/share_icon"
+                android:icon="@mipmap/circulo"
                 android:title="@string/share"
                 android:fontFamily="casual"/>
             <item
                 android:id="@+id/nav_about_layout"
-                android:icon="@mipmap/about_icon"
+                android:icon="@mipmap/circulo"
                 android:title="@string/us"
                 android:fontFamily="casual"/>
         </menu>
@@ -43,12 +47,12 @@
         <menu>
             <item
                 android:id="@+id/nav_manage"
-                android:icon="@mipmap/ajustes_icon"
+                android:icon="@mipmap/circulo"
                 android:title="@string/configuration"
                 android:fontFamily="casual"/>
             <item
                 android:id="@+id/nav_close"
-                android:icon="@mipmap/salir_icon"
+                android:icon="@mipmap/circulo"
                 android:title="@string/exit"
                 android:fontFamily="casual"/>
         </menu>

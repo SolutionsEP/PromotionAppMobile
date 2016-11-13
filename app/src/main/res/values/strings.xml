@@ -12,7 +12,7 @@
     <string name="app_label">Search</string>
     <string name="search_hint">Search Me</string>
     <string name="search">Buscar</string>
-    <string name="title_activity_near">Mas cerca</string>
+    <string name="title_activity_near">TO CLOSER</string>
     <string name="title_activity_promotion_detail">PromotionDetailActivity</string>
     <string name="text_share">Descarga ya ProMotion App!! La mejor app para promociones ahora https://play.google.com/store?hl=en</string>
     <string name="app_description">En ProMotion App podras encontrar las mejores ofertas en promociones publicadas por comercios afiliados a nuestro portal, asi como tambien podras ubicarlos y mucho mas...</string>
@@ -25,7 +25,7 @@
     <string name="texto_notificaciones">Frecuencia de envio de notificaciones para mis promociones por tienda:</string>
 
     <string name="start">START</string>
-    <string name="category">CATEGORY</string>
+    <string name="category">CATEGORIES</string>
     <string name="toCloser">TO CLOSER</string>
     <string name="share">SHARE</string>
     <string name="us">US</string>
