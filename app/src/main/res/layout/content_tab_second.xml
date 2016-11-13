@@ -35,7 +35,7 @@
 
                         <ImageButton
                             android:layout_width="fill_parent"
-                            android:layout_height="200dp"
+                            android:layout_height="220dp"
                             android:id="@+id/imageButtonRest"
                             android:src="@drawable/restaurant"
                             android:textAlignment="center"
@@ -50,7 +50,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/btnNextRest"
-                            android:src="@mipmap/siguiente_pagina"
+                            android:src="@mipmap/siguiente_pagina_dos"
                             android:layout_centerVertical="true"
                             android:layout_alignParentStart="false"
                             android:layout_alignParentEnd="true"
@@ -59,9 +59,9 @@
 
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="Restaurantes"
+                            android:text="RESTAURANTS"
                             android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
                             android:textColor="#FFFFFF"
                             android:fontFamily="casual"
@@ -69,6 +69,7 @@
                             android:layout_alignParentBottom="true"
                             android:paddingBottom="15dp"
                             android:paddingLeft="10dp"
+                            android:background="@color/black"
                             android:id="@+id/textView" />
 
                     </RelativeLayout>
@@ -95,7 +96,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/btnNextStores"
-                            android:src="@mipmap/siguiente_pagina"
+                            android:src="@mipmap/siguiente_pagina_dos"
                             android:layout_centerVertical="true"
                             android:layout_alignParentStart="false"
                             android:layout_alignParentEnd="true"
@@ -103,9 +104,9 @@
                             android:background="#00000000"/>
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="Tiendas Deportivas"
+                            android:text="CLOTHING SHOPS"
                             android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
                             android:textColor="#FFFFFF"
                             android:fontFamily="casual"
@@ -139,16 +140,16 @@
                             android:layout_height="wrap_content"
                             android:id="@+id/btnNexDisco"
                             android:layout_centerVertical="true"
-                            android:src="@mipmap/siguiente_pagina"
+                            android:src="@mipmap/siguiente_pagina_dos"
                             android:layout_alignParentStart="false"
                             android:layout_alignParentEnd="true"
                             android:paddingRight="10dp"
                             android:background="#00000000"/>
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:text="Locales Nocturnos"
+                            android:text="TECHNOLOGY"
                             android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
                             android:textColor="#FFFFFF"
                             android:fontFamily="casual"
