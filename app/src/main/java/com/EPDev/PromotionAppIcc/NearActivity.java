@@ -93,6 +93,7 @@ public class NearActivity extends AppCompatActivity implements OnMapReadyCallbac
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        /*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,7 +103,7 @@ public class NearActivity extends AppCompatActivity implements OnMapReadyCallbac
                 intent.putExtra(Intent.EXTRA_TEXT, getResources().getText(R.string.text_share));
                 startActivity(Intent.createChooser(intent, "Compartir con"));
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity
         Log.e("HOME_FRAGMENT","Before main");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
 
         //boton = (Button)findViewById(R.id.btn_go_next);
         //texto = (EditText)findViewById(R.id.editText);
