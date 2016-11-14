@@ -31,19 +31,18 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
                         >
 
                         <ImageButton
                             android:layout_width="fill_parent"
-                            android:layout_height="220dp"
+                            android:layout_height="200dp"
                             android:id="@+id/imageButtonRest"
                             android:src="@drawable/restaurant"
                             android:textAlignment="center"
                             android:textColor="#FFFFFF"
-                            android:paddingTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:drawablePadding="-15sp"
-
+                            android:scaleType="centerInside"
+                            android:adjustViewBounds="true"
                             />
 
                         <ImageButton
@@ -64,12 +63,13 @@
                             android:text="RESTAURANTS"
                             android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
                             android:textColor="#FFFFFF"
-                            android:fontFamily="casual"
                             android:textStyle="bold"
                             android:layout_alignParentBottom="true"
-                            android:paddingBottom="15dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
                             android:paddingLeft="10dp"
-                            android:background="@color/black"
+                            android:paddingRight="10dp"
+                            android:background="#CC000000"
                             android:id="@+id/textView" />
 
                     </RelativeLayout>
@@ -77,10 +77,11 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
                         >
 
                         <ImageButton
-                            android:layout_width="fill_parent"
+                            android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:id="@+id/imageButtonShop"
                             android:src="@drawable/sportshop"
@@ -109,21 +110,25 @@
                             android:text="CLOTHING SHOPS"
                             android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
                             android:textColor="#FFFFFF"
-                            android:fontFamily="casual"
                             android:textStyle="bold"
                             android:layout_alignParentBottom="true"
-                            android:paddingBottom="15dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
                             android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="#CC000000"
+                            android:id="@+id/textView2" />
                             />
                     </RelativeLayout>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginBottom="15dp"
                         >
 
                         <ImageButton
-                            android:layout_width="fill_parent"
+                            android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:id="@+id/imageButtonDisco"
                             android:src="@drawable/sportshop"
@@ -152,11 +157,14 @@
                             android:text="TECHNOLOGY"
                             android:textSize="@dimen/cast_libraries_material_featurehighlight_text_body_size"
                             android:textColor="#FFFFFF"
-                            android:fontFamily="casual"
                             android:textStyle="bold"
                             android:layout_alignParentBottom="true"
-                            android:paddingBottom="15dp"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
                             android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="#CC000000"
+                            android:id="@+id/textView3" />
 
                             />
                     </RelativeLayout>
