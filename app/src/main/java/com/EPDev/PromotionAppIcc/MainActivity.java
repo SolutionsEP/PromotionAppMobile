@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity
         Log.e("HOME_FRAGMENT","Before main");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+        ReplaceFonts.replaceDefaultFonts(this, "DEFAULT", "FutuBk_.ttf");
 
         //boton = (Button)findViewById(R.id.btn_go_next);
         //texto = (EditText)findViewById(R.id.editText);
@@ -187,8 +187,9 @@ public class MainActivity extends AppCompatActivity
         //Set Images Buttons
 
         //Image Button Restaurant
+        //http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/restaurante.png
         imgBtnRest = (ImageButton)findViewById(R.id.imageButtonRest);
-        Picasso.with(getContext()).load("http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/restaurante.png").into(imgBtnRest);
+        Picasso.with(getContext()).load("http://sj.uploads.im/U1c4g.jpg").into(imgBtnRest);
         imgBtnRest.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //Here u need to call the restaurants services
@@ -197,8 +198,9 @@ public class MainActivity extends AppCompatActivity
         });
 
         //Image Button Shop
+        //http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/sports_shop.png
         imgBtnShop = (ImageButton)findViewById(R.id.imageButtonShop);
-        Picasso.with(getContext()).load("http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/sports_shop.png").into(imgBtnShop);
+        Picasso.with(getContext()).load("http://sk.uploads.im/YS2Fv.jpg").into(imgBtnShop);
         imgBtnShop.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //Here u need to call the restaurants services
@@ -207,8 +209,9 @@ public class MainActivity extends AppCompatActivity
         });
 
         //Image Button Disco
+        //http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/disco.png
         imgBtnDisco = (ImageButton)findViewById(R.id.imageButtonDisco);
-        Picasso.with(getContext()).load("http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/disco.png").into(imgBtnDisco);
+        Picasso.with(getContext()).load("http://sk.uploads.im/hDC8f.jpg").into(imgBtnDisco);
         imgBtnDisco.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //Here u need to call the restaurants services
