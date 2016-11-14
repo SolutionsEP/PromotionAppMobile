@@ -16,8 +16,11 @@
     <string name="title_activity_promotion_detail">PromotionDetailActivity</string>
     <string name="text_share">Descarga ya ProMotion App!! La mejor app para promociones ahora https://play.google.com/store?hl=en</string>
     <string name="app_description">En ProMotion App podras encontrar las mejores ofertas en promociones publicadas por comercios afiliados a nuestro portal, asi como tambien podras ubicarlos y mucho mas...</string>
+    <string name="app_description2">In ProMotion App will find the bests offers and promotions published by affiliated commerces in our portal. Also can locate stores and more. </string>
     <string name="contactanos">Puedes contactarnos a por correo electronico o a traves de una simple llamada a nuestra central telefonica:</string>
+    <string name="contactanos2">You can contact us by email or a simple phone call:</string>
     <string name="app_suscribe">Para suscribirte a la cadena de comercios afiliados a ProMotion app debes ingresar a nuestro portal administrativo para realizar el registro de tu comercio y empezar a ofrecer tus mejores servicios y promociones con nosotros.</string>
+    <string name="app_suscribe2">If you want to subscribe to commerce chains affiliate to ProMotion app, should be to enter to our administrative portal and register your commerces to begin to offer the best services and promotions with us.</string>
     <string name="text_email">En ProMotion App, trabajamos para tu comodidad y bienestar, Ingresa aca tu comentario, critica o propuesta! En la brevedad posible nuestros operadores estaran contactandote de ser necesario.</string>
     <string name="configuracion">Configuración</string>
     <string name="version_app">ProMotion App V 1.0.0</string>
@@ -33,5 +36,16 @@
     <string name="exit">EXIT</string>
     <string name="titleShare">Share and contact</string>
     <string name="titleAdjust">Adjustments</string>
+
+    <string name="about_welcome">¡Welcome to ProMotion App!</string>
+    <string name="about_title_label">Us</string>
+    <string name="about_us_question_text">About us?</string>
+    <string name="our_team_text">Our team:</string>
+    <string name="owner_develop_text">Owner / Developer</string>
+    <string name="how_affiliate_question">How can I join?</string>
+    <string name="email_label_text">E-mail: </string>
+    <string name="phone_label_text">Phone: </string>
+    <string name="contactus_text">Contact us</string>
+
 
 </resources>
