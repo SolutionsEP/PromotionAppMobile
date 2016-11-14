@@ -51,7 +51,7 @@
         <activity
             android:name=".StoresActivity"
             android:fontFamily="casual"
-            android:label="Categorias"
+            android:label="@string/category"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -66,7 +66,7 @@
         <activity
             android:name=".AboutActivity"
             android:fontFamily="casual"
-            android:label="@string/about_title_label" />
+            android:label="@string/us" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
