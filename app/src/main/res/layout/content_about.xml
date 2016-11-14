@@ -18,23 +18,25 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="160dp"
-            android:background="@mipmap/backrombobluepurple"
+            android:background="@color/black"
             android:padding="10dp"
             android:gravity="">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@mipmap/ic_menu_launcher"
-                android:background="#00000000"
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/promotion"
+                android:scaleType="centerCrop"
+                android:layout_centerHorizontal="true"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="¡Bienvenido a Promotion App!"
+                android:text="@string/about_welcome"
                 android:textColor="#FFFFFF"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="110dp"
                 android:textAlignment="center"
                 android:textSize="20dp"
                 android:textStyle="bold"
@@ -65,13 +67,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:text="¿Que es ProMotion App?"
+                        android:text="@string/about_us_question_text"
                         android:textSize="17dp"
                         android:fontFamily="casual"
                         android:textColor="#FFFFFF"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:background="@color/colorAccent"/>
+                        android:background="@color/black"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -82,7 +84,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/app_description"
+                            android:text="@string/app_description2"
                             android:fontFamily="casual"/>
 
                         <TextView
@@ -91,7 +93,7 @@
                             android:paddingTop="5dp"
                             android:paddingBottom="5dp"
                             android:textStyle="bold"
-                            android:text="Nuestro equipo: "
+                            android:text="@string/our_team_text"
                             android:fontFamily="casual"/>
 
                         <LinearLayout
@@ -122,7 +124,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Dueño / Desarrollador"
+                                    android:text="@string/owner_develop_text"
                                     android:fontFamily="casual"
                                     android:textStyle="bold"/>
 
@@ -150,7 +152,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Dueño / Desarrollador"
+                                    android:text="@string/owner_develop_text"
                                     android:fontFamily="casual"
                                     android:textStyle="bold"/>
 
@@ -174,19 +176,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:text="¿Como puedo afiliarme?"
+                        android:text="@string/how_affiliate_question"
                         android:textSize="17dp"
                         android:fontFamily="casual"
                         android:textColor="#FFFFFF"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:background="@color/colorAccent"/>
+                        android:background="@color/black"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:padding="5dp"
                         android:layout_height="wrap_content"
-                        android:text="@string/app_suscribe"
+                        android:text="@string/app_suscribe2"
                         android:fontFamily="casual"/>
 
                     <TextView
@@ -216,13 +218,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:text="Contactanos"
+                        android:text="@string/contactus_text"
                         android:textSize="17dp"
                         android:fontFamily="casual"
                         android:textColor="#FFFFFF"
                         android:textAlignment="center"
                         android:textStyle="bold"
-                        android:background="@color/colorAccent"/>
+                        android:background="@color/black"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -239,7 +241,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="@string/contactanos"
+                                android:text="@string/contactanos2"
                                 android:fontFamily="casual"/>
 
                             <LinearLayout
@@ -252,13 +254,13 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Correo:  "
+                                    android:text="@string/email_label_text"
                                     android:textStyle="bold"
                                     />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="contacto@promotion.com"
+                                    android:text="epsolutionsdevelop@gmail.com"
                                     />
                             </LinearLayout>
 
@@ -270,7 +272,7 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Telefono:  "
+                                    android:text="@string/phone_label_text"
                                     android:textStyle="bold"
 
                                     />
