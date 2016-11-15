@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@color/colorAccent"
+        android:background="@color/black_plomo"
 
         >
 
@@ -21,7 +21,7 @@
             android:layout_centerInParent="true"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            android:fontFamily="casual"
+            android:fontFamily="sans-serif-smallcaps"
             android:textSize="20dp"
             android:textStyle="bold"/>
 
@@ -33,7 +33,7 @@
             android:textStyle="bold"
             android:id="@+id/close_window"
             android:textColor="#FFFFFF"
-            android:fontFamily="casual"
+            android:fontFamily="sans-serif-smallcaps"
             android:focusableInTouchMode="true"
             android:textSize="20dp"
             android:layout_alignParentEnd="true"
@@ -55,23 +55,25 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="10dp">
+
+                >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:text="Notificaciones"
-                    android:fontFamily="casual"
-                    android:layout_marginTop="5dp"
+                    android:text="@string/notifications_text"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/black"
+                    android:textColor="@color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:fontFamily="sans-serif-smallcaps"
                     />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@color/colorAccent" />
+
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -79,32 +81,35 @@
                     android:scaleType="center"
                     android:src="@mipmap/notification"
                     android:layout_gravity="center"
-                    android:layout_margin="10dp"/>
+                    android:layout_margin="10dp"
+                    />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="15dp"
                     android:textStyle="bold"
-                    android:padding="2dp"
-                    android:text="@string/texto_notificaciones"
-                    android:fontFamily="casual"
+                    android:paddingTop="2dp"
+                    android:text="@string/texto_notificaciones2"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
                     />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/radio_notify">
+                    android:id="@+id/radio_notify"
+                    android:paddingLeft="15dp">
 
                     <RadioButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="15dp"
                         android:textStyle="bold"
-                        android:text="Cada minuto"
+                        android:text="@string/each_minute_text"
                         android:padding="10dp"
-                        android:fontFamily="casual"
+                        android:fontFamily="sans-serif-smallcaps"
                         android:id="@+id/radioNotifyMinute"
                         android:onClick="onRadioNotifyClicked"
                         android:layout_gravity="clip_vertical" />
@@ -113,9 +118,9 @@
                         android:layout_height="wrap_content"
                         android:textSize="15dp"
                         android:textStyle="bold"
-                        android:text="Cada hora"
+                        android:text="@string/each_hour_text"
                         android:padding="10dp"
-                        android:fontFamily="casual"
+                        android:fontFamily="sans-serif-smallcaps"
                         android:id="@+id/radioNotifyHour"
                         android:onClick="onRadioNotifyClicked"
                         android:layout_gravity="clip_vertical" />
@@ -124,10 +129,10 @@
                         android:layout_height="wrap_content"
                         android:textSize="15dp"
                         android:textStyle="bold"
-                        android:text="Diariamente"
+                        android:text="@string/everyday_text"
                         android:checked="true"
                         android:padding="10dp"
-                        android:fontFamily="casual"
+                        android:fontFamily="sans-serif-smallcaps"
                         android:id="@+id/radioNotifyDay"
                         android:onClick="onRadioNotifyClicked"
                         android:layout_gravity="clip_vertical" />
@@ -139,10 +144,11 @@
                     android:layout_height="wrap_content"
                     android:textSize="14dp"
                     android:textStyle="bold"
-                    android:padding="2dp"
-                    android:text="@string/condicion"
-                    android:fontFamily="casual"
+                    android:paddingTop="2dp"
+                    android:text="@string/condicion2"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
                     />
 
             </LinearLayout>
@@ -151,45 +157,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="10dp">
+                android:layout_marginTop="20dp"
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@color/colorAccent" />
+                >
+
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="16dp"
                     android:textStyle="bold"
-                    android:text="Actualizaciones"
-                    android:fontFamily="casual"
+                    android:text="@string/update_text"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:background="@color/black_plomo"
+                    android:textColor="@color/white"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@color/colorAccent" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="15dp"
                     android:textStyle="bold"
-                    android:padding="2dp"
-                    android:text="Actualizar ProMotion App:"
-                    android:fontFamily="casual"
-                    android:layout_marginTop="5dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/how_update_app"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
                     />
 
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/radio_update">
+                    android:id="@+id/radio_update"
+                    android:paddingLeft="15dp">
 
                     <RadioButton
                         android:layout_width="wrap_content"
@@ -197,8 +202,8 @@
                         android:textSize="15dp"
                         android:textStyle="bold"
                         android:padding="10dp"
-                        android:fontFamily="casual"
-                        android:text="Actualizar siempre"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/update_forever_text"
                         android:id="@+id/radioUpdatesEver"
                         android:checked="true"
                         android:onClick="onRadioUpdatesClicked"
@@ -210,8 +215,8 @@
                         android:textSize="15dp"
                         android:textStyle="bold"
                         android:padding="10dp"
-                        android:fontFamily="casual"
-                        android:text="Actualizar solo con red WI-FI"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/update_with_wifi_text"
                         android:id="@+id/radioUpdatesWifi"
                         android:onClick="onRadioUpdatesClicked"
                         android:layout_gravity="clip_vertical" />
@@ -222,8 +227,8 @@
                         android:textSize="15dp"
                         android:textStyle="bold"
                         android:padding="10dp"
-                        android:fontFamily="casual"
-                        android:text="Nunca actualizar"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/update_never_text"
                         android:id="@+id/radioUpdatesNever"
                         android:onClick="onRadioUpdatesClicked"
                         android:layout_gravity="clip_vertical" />
@@ -234,41 +239,35 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
                 android:orientation="vertical"
-                android:padding="10dp">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@color/colorAccent" />
-
+                android:layout_marginTop="10dp"
+                >
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="16dp"
                     android:textStyle="bold"
                     android:text="Version"
-                    android:fontFamily="casual"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:layout_marginTop="5dp"
+                    android:background="@color/black_plomo"
+                    android:textColor="@color/white"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
                     />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@color/colorAccent" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="15dp"
                     android:textStyle="bold"
-                    android:padding="2dp"
+                    android:paddingTop="2dp"
                     android:text="@string/version_app"
-                    android:fontFamily="casual"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
                     />
 
             </LinearLayout>
