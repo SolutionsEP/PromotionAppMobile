@@ -23,16 +23,19 @@
     <string name="app_suscribe2">If you want to subscribe to commerce chains affiliate to ProMotion app, should be to enter to our administrative portal and register your commerces to begin to offer the best services and promotions with us.</string>
     <string name="text_email">En ProMotion App, trabajamos para tu comodidad y bienestar, Ingresa aca tu comentario, critica o propuesta! En la brevedad posible nuestros operadores estaran contactandote de ser necesario.</string>
     <string name="configuracion">Configuración</string>
+    <string name="configuracion2">Settings</string>
     <string name="version_app">ProMotion App V 1.0.0</string>
     <string name="condicion">* Recomendado Diariamente</string>
+    <string name="condicion2">* Daily Recommended</string>
     <string name="texto_notificaciones">Frecuencia de envio de notificaciones para mis promociones por tienda:</string>
+    <string name="texto_notificaciones2">Frequency of sending notifications of promotions per store:</string>
 
-    <string name="start">START</string>
+    <string name="start">HOME</string>
     <string name="category">CATEGORIES</string>
     <string name="toCloser">TO CLOSER</string>
     <string name="share">SHARE</string>
     <string name="us">US</string>
-    <string name="configuration">CONFIGURATION</string>
+    <string name="configuration">SETTINGS</string>
     <string name="exit">EXIT</string>
     <string name="titleShare">Share and contact</string>
     <string name="titleAdjust">Adjustments</string>
@@ -46,6 +49,15 @@
     <string name="email_label_text">E-mail: </string>
     <string name="phone_label_text">Phone: </string>
     <string name="contactus_text">Contact us</string>
+    <string name="notifications_text">Notifications</string>
+    <string name="update_text">Updates</string>
+    <string name="how_update_app">Update Promotion App:</string>
+    <string name="update_forever_text">Update always</string>
+    <string name="update_with_wifi_text">Update only with Wifi</string>
+    <string name="update_never_text">Never Update</string>
+    <string name="each_minute_text">Each minute</string>
+    <string name="each_hour_text">Each hour</string>
+    <string name="everyday_text">Everyday</string>
 
 
 </resources>
