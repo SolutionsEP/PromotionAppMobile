@@ -162,13 +162,13 @@ public class StoresActivity extends AppCompatActivity
                                 maskAddress(StoresData.getStoresData().get(i).getAddress()),
                                 StoresData.getStoresData().get(i).getShopID()));
                         break;
-                    case "2":
+                    case "5":
                         childRowsSports.add(new ChildRow(StoresData.getStoresData().get(i).getPicture(),
                                 StoresData.getStoresData().get(i).getName(),
                                 maskAddress(StoresData.getStoresData().get(i).getAddress()),
                                 StoresData.getStoresData().get(i).getShopID()));
                         break;
-                    case "3":
+                    case "4":
                         childRowsDisco.add(new ChildRow(StoresData.getStoresData().get(i).getPicture(),
                                 StoresData.getStoresData().get(i).getName(),
                                 maskAddress(StoresData.getStoresData().get(i).getAddress()),
@@ -177,13 +177,13 @@ public class StoresActivity extends AppCompatActivity
                 }
             }
         }
-        parentRowRestaurants = new ParentRow("Restaurantes", childRowsRest);
+        parentRowRestaurants = new ParentRow("RESTAURANTS", childRowsRest);
         parentList.add(parentRowRestaurants);
 
-        parentRowSports = new ParentRow("Tiendas deportivas", childRowsSports);
+        parentRowSports = new ParentRow("CLOTHING STORES", childRowsSports);
         parentList.add(parentRowSports);
 
-        parentRowDiscos = new ParentRow("Discotecas", childRowsDisco);
+        parentRowDiscos = new ParentRow("TECHNOLOGY", childRowsDisco);
         parentList.add(parentRowDiscos);
 
         /*

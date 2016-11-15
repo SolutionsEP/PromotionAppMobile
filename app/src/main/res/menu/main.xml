@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/action_settings"
-        android:title="Configuracion"
-        android:fontFamily="casual">
+        android:title="Settings"
+        android:fontFamily="sans-serif-smallcaps">
 
     </item>
 

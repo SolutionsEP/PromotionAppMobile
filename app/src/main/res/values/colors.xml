@@ -4,8 +4,9 @@
     <color name="colorPrimaryDark">#222d32</color>
     <color name="colorAccent">#000000</color>
     <color name="blueSplash">#caf3f5</color>
-    <color name="sub_type_store">#e1e0e0</color>
-    <color name="green_call">#000000</color>
+    <color name="sub_type_store">#ffffff</color>
+    <color name="green_call">#c50d4e</color>
     <color name="white">#ffffff</color>
     <color name="black">#000000</color>
+    <color name="fucsia">#FFC50D4E</color>
 </resources>
