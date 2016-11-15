@@ -7,6 +7,9 @@
     <color name="sub_type_store">#ffffff</color>
     <color name="green_call">#c50d4e</color>
     <color name="white">#ffffff</color>
+
+    <color name="black_plomo">#251f1f</color>
     <color name="black">#000000</color>
     <color name="fucsia">#FFC50D4E</color>
+
 </resources>
