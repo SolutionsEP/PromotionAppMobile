@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.EPDev.PromotionAppIcc.PromotionDetailActivity"
-    tools:showIn="@layout/activity_promotion_detail">
+    tools:showIn="@layout/activity_promotion_detail"
+    android:background="#ffffff">
 
     <com.EPDev.PromotionAppIcc.VerticalScrollview
         android:layout_width="match_parent"
@@ -16,9 +17,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-
             >
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/fucsia" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -30,14 +34,12 @@
                 android:layout_centerVertical="true"
                 />
 
-
+            <!--android:layout_margin="5dp"
+                android:background="@drawable/background_with_shadow"-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
-                android:layout_margin="5dp"
-                android:background="@drawable/background_with_shadow"
-
                 >
 
                 <TextView
@@ -47,81 +49,100 @@
                     android:text="Titulo Promocion"
                     android:textSize="17dp"
                     android:id="@+id/promotion_detail_title"
-                    android:fontFamily="casual"
+                    android:fontFamily="sans-serif-smallcaps"
                     android:textColor="#FFFFFF"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:background="@color/colorAccent"
 
                     />
-
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="5dp">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10dp">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Acerca de la promocion"
-                        android:paddingBottom="5dp"
-                        android:id="@+id/promotion_detail_about"/>
-
-                    <LinearLayout
+                    <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingBottom="5dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Categoria: "
-                            android:textStyle="bold"
-                            android:textAlignment="textStart"
-                            android:paddingTop="5dp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Restaurante"
-                            android:id="@+id/category_store"/>
-
-                    </LinearLayout>
+                        android:src="@drawable/circulodos"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="10dp"
+                        />
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingBottom="5dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Precio: "
-                            android:textStyle="bold"
-                            android:textAlignment="textStart"
-                           />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Restaurante"
-                            android:id="@+id/promotion_detail_price"/>
-
-                    </LinearLayout>
-
-                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Valido hasta el..."
-                        android:paddingBottom="5dp"
-                        android:id="@+id/promotion_valid_date"/>
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Acerca de la promocion"
+                            android:paddingBottom="5dp"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:id="@+id/promotion_detail_about"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Category: "
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:textStyle="bold"
+                                android:textAlignment="textStart"
+                                android:paddingTop="5dp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Restaurante"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:id="@+id/category_store"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Price: "
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:textStyle="bold"
+                                android:textAlignment="textStart"
+                               />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-smallcaps"
+                                android:text="Restaurante"
+                                android:id="@+id/promotion_detail_price"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Valido hasta el..."
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:paddingBottom="5dp"
+                            android:id="@+id/promotion_valid_date"/>
 
 
+                    </LinearLayout>
                 </LinearLayout>
-
             </LinearLayout>
 
         </LinearLayout>

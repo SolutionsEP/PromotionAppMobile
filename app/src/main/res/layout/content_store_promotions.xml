@@ -6,7 +6,7 @@
     android:layout_height="300dp"
     tools:context="com.EPDev.PromotionAppIcc.StoreDetailActivity"
     tools:showIn="@layout/activity_store_detail"
-    >
+    android:background="#ffffff">
 
     <ListView
         android:layout_width="match_parent"

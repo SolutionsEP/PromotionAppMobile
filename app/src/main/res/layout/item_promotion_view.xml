@@ -12,8 +12,9 @@
         android:orientation="horizontal"
         android:paddingTop="3dp"
         android:paddingBottom="3dp"
-        android:layout_margin="5dp"
-        android:background="@drawable/background_with_shadow">
+        android:layout_margin="10dp"
+        >
+        <!--android:background="@drawable/background_with_shadow"-->
 
         <ImageView
             android:layout_width="150dp"
@@ -22,29 +23,51 @@
             android:scaleType="centerCrop"
             android:src="@drawable/supermarket"/>
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circulodos"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:paddingLeft="10dp">
+            android:paddingLeft="5dp">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/promotion_title"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:text="Mi titulo"
-                android:fontFamily="casual"
-                android:layout_marginTop="10dp"
-                />
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/promotion_title"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="Mi titulo"
+                    android:fontFamily="sans-serif-smallcaps"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="20dp"
+                android:background="#d53d3b3b" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Descripcion"
                 android:id="@+id/promotion_description"
-                android:fontFamily="casual"
+                android:fontFamily="sans-serif-smallcaps"
                 android:layout_marginTop="10dp"
                 />
 
@@ -53,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:text="Valida hasta el 20 de agosto"
                 android:id="@+id/promotion_valid"
-                android:fontFamily="casual"
+                android:fontFamily="sans-serif-smallcaps"
                 android:layout_marginTop="10dp"
                 android:textSize="10dp"
                 />
