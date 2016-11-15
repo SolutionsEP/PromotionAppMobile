@@ -429,25 +429,31 @@ public class MainActivity extends AppCompatActivity
     private void addPromotions(){
 
         for (int j = 0; j < StoresData.getStoresData().size();j++) {
+            Log.e("ADD_PROMOTIONS", "j: "+j+", isActive: "+ StoresData.getStoresData().get(j).getisActive());
 
-            storePromotions = StoresData.getStoresData().get(j).getPromotions();
+            if(StoresData.getStoresData().get(j).getisActive() == "true" || Boolean.parseBoolean(StoresData.getStoresData().get(j).getisActive())){
 
-            for (int i = 0; i < storePromotions.size(); i++) {
+                storePromotions = StoresData.getStoresData().get(j).getPromotions();
 
-                Log.e("ADD_PROMOTIONS", "i: " + i + ", and size: " + storePromotions.size());
-                Log.e("ADD_PROMOTIONS", "Name: " + StoresData.getStoresData().get(j).getName()
-                                  + ", and id: " + StoresData.getStoresData().get(j).getShopID());
+                for (int i = 0; i < storePromotions.size(); i++) {
 
-                promotions.add(new PromotionMain(storePromotions.get(i).getId(),
-                        storePromotions.get(i).getTitle(),
-                        storePromotions.get(i).getAbout(),
-                        storePromotions.get(i).getIsActive(),
-                        storePromotions.get(i).getPicture(),
-                        storePromotions.get(i).getPrice(),
-                        storePromotions.get(i).getEndDate(),
-                        StoresData.getStoresData().get(j).getName(),
-                        StoresData.getStoresData().get(j).getShopID()
+                    Log.e("ADD_PROMOTIONS", "i: " + i + ", and size: " + storePromotions.size());
+                    Log.e("ADD_PROMOTIONS", "Name: " + StoresData.getStoresData().get(j).getName()
+                            + ", and id: " + StoresData.getStoresData().get(j).getShopID());
+                    if(StoresData.getStoresData().get(j).getPromotions().get(i).getIsActive()) {
+
+                        promotions.add(new PromotionMain(storePromotions.get(i).getId(),
+                                storePromotions.get(i).getTitle(),
+                                storePromotions.get(i).getAbout(),
+                                storePromotions.get(i).getIsActive(),
+                                storePromotions.get(i).getPicture(),
+                                storePromotions.get(i).getPrice(),
+                                storePromotions.get(i).getEndDate(),
+                                StoresData.getStoresData().get(j).getName(),
+                                StoresData.getStoresData().get(j).getShopID()
                         ));
+                    }
+                }
             }
         }
 
@@ -554,10 +560,10 @@ public class MainActivity extends AppCompatActivity
 
             Log.e("FORMAT_DATE_PROM","Day: "+day+" , month: "+month+", year:"+year);
 
-            String completeDate = "Valido hasta el ".concat(day)
-                    .concat(" de ")
+            String completeDate = "Valid until: ".concat(day)
+                    .concat(" ")
                     .concat(getMonth(month))
-                    .concat(" del ")
+                    .concat(" ")
                     .concat(year);
 
             return completeDate;
@@ -568,40 +574,40 @@ public class MainActivity extends AppCompatActivity
 
             switch (number){
                 case "01":
-                    return "Enero";
+                    return "January";
 
                 case "02":
-                    return "Febrero";
+                    return "February";
 
                 case "03":
-                    return "Marzo";
+                    return "March";
 
                 case "04":
-                    return "Abril";
+                    return "April";
 
                 case "05":
-                    return "Mayo";
+                    return "May";
 
                 case "06":
-                    return "Junio";
+                    return "June";
 
                 case "07":
-                    return "Julio";
+                    return "July";
 
                 case "08":
-                    return "Agosto";
+                    return "August";
 
                 case "09":
-                    return "Septiembre";
+                    return "September";
 
                 case "10":
-                    return "Octubre";
+                    return "October";
 
                 case "11":
-                    return "Noviembre";
+                    return "November";
 
                 case "12":
-                    return "Diciembre";
+                    return "December";
 
                 default:
                     return "SIN MES";

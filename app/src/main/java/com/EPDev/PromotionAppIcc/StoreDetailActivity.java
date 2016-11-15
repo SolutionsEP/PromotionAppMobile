@@ -440,10 +440,10 @@ public class StoreDetailActivity extends AppCompatActivity implements Navigation
 
             Log.e("FORMAT_DATE_PROM","Day: "+day+" , month: "+month+", year:"+year);
 
-            String completeDate = "Valido hasta el ".concat(day)
-                    .concat(" de ")
+            String completeDate = "Valid until: ".concat(day)
+                    .concat(" ")
                     .concat(getMonth(month))
-                    .concat(" del ")
+                    .concat(" ")
                     .concat(year);
 
             return completeDate;
@@ -454,40 +454,40 @@ public class StoreDetailActivity extends AppCompatActivity implements Navigation
 
             switch (number){
                 case "01":
-                    return "Enero";
+                    return "January";
 
                 case "02":
-                    return "Febrero";
+                    return "February";
 
                 case "03":
-                    return "Marzo";
+                    return "March";
 
                 case "04":
-                    return "Abril";
+                    return "April";
 
                 case "05":
-                    return "Mayo";
+                    return "May";
 
                 case "06":
-                    return "Junio";
+                    return "June";
 
                 case "07":
-                    return "Julio";
+                    return "July";
 
                 case "08":
-                    return "Agosto";
+                    return "August";
 
                 case "09":
-                    return "Septiembre";
+                    return "September";
 
                 case "10":
-                    return "Octubre";
+                    return "October";
 
                 case "11":
-                    return "Noviembre";
+                    return "November";
 
                 case "12":
-                    return "Diciembre";
+                    return "December";
 
                 default:
                     return "SIN MES";
