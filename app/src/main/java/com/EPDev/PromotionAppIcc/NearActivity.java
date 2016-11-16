@@ -361,25 +361,25 @@ public class NearActivity extends AppCompatActivity implements OnMapReadyCallbac
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
             intent.putExtra(Intent.EXTRA_TEXT, getResources().getText(R.string.text_share));
-            startActivity(Intent.createChooser(intent, "Compartir con"));
+            startActivity(Intent.createChooser(intent, "Share With"));
 
         }else if (id == R.id.nav_near_layout) {
 
 
         }else if (id == R.id.nav_close){
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-            alertDialogBuilder.setTitle("Esta seguro que desea salir de ProMotion App?");
+            alertDialogBuilder.setTitle(getResources().getText(R.string.leave_app));
             alertDialogBuilder
-                    .setMessage("Aceptar para salir!")
+                    .setMessage(getResources().getText(R.string.ok_leave))
                     .setCancelable(false)
-                    .setPositiveButton("Aceptar",
+                    .setPositiveButton(getResources().getText(R.string.ok),
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
                                     moveTaskToBack(true);
                                 }
                             })
 
-                    .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                    .setNegativeButton(getResources().getText(R.string.cancel), new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
 
                             dialog.cancel();
@@ -443,8 +443,8 @@ public class NearActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     @Override
     public void onDirectionFinderStart() {
-        progressDialog = ProgressDialog.show(this, "Por favor espere,",
-                "Buscando direcciones..!", true);
+        progressDialog = ProgressDialog.show(this, "Please wait,",
+                "Looking for directions...", true);
 
         if (originMarkers != null) {
             for (Marker marker : originMarkers) {

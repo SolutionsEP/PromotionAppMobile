@@ -105,7 +105,7 @@ public class StoreDetailActivity extends AppCompatActivity implements Navigation
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_TEXT, getResources().getText(R.string.text_share));
-                startActivity(Intent.createChooser(intent, "Compartir con"));
+                startActivity(Intent.createChooser(intent, "Share With"));
             }
         });
 
@@ -168,11 +168,11 @@ public class StoreDetailActivity extends AppCompatActivity implements Navigation
     public void llamar(final String tel, final String storeName) {
         final Context context = this;
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setTitle("¿Esta seguro que desea llamar a "+storeName+"?");
+        alertDialogBuilder.setTitle("¿Are you sure you want to call "+storeName+"?");
         alertDialogBuilder
-                .setMessage("Aceptar para llamar!")
+                .setMessage("Ok to Call!")
                 .setCancelable(false)
-                .setPositiveButton("Aceptar",
+                .setPositiveButton("Ok",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 moveTaskToBack(true);
@@ -194,7 +194,7 @@ public class StoreDetailActivity extends AppCompatActivity implements Navigation
                             }
                         })
 
-                .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
 
                         dialog.cancel();
@@ -440,9 +440,9 @@ public class StoreDetailActivity extends AppCompatActivity implements Navigation
 
             Log.e("FORMAT_DATE_PROM","Day: "+day+" , month: "+month+", year:"+year);
 
-            String completeDate = "Valid until: ".concat(day)
+            String completeDate = "Valid until: ".concat(getMonth(month))
                     .concat(" ")
-                    .concat(getMonth(month))
+                    .concat(day)
                     .concat(" ")
                     .concat(year);
 

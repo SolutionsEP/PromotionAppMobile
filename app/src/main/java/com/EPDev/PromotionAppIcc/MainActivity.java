@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_TEXT, getResources().getText(R.string.text_share));
-                startActivity(Intent.createChooser(intent, "Compartir con"));
+                startActivity(Intent.createChooser(intent, "Share With"));
             }
         });
 
@@ -398,18 +398,18 @@ public class MainActivity extends AppCompatActivity
 
         }else if (id == R.id.nav_close){
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-            alertDialogBuilder.setTitle("Esta seguro que desea salir de ProMotion App?");
+            alertDialogBuilder.setTitle(getResources().getText(R.string.leave_app));
             alertDialogBuilder
-                    .setMessage("Aceptar para salir!")
+                    .setMessage(getResources().getText(R.string.ok_leave))
                     .setCancelable(false)
-                    .setPositiveButton("Aceptar",
+                    .setPositiveButton(getResources().getText(R.string.ok),
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
                                     moveTaskToBack(true);
                                 }
                             })
 
-                    .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                    .setNegativeButton(getResources().getText(R.string.cancel), new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
 
                             dialog.cancel();
@@ -440,19 +440,17 @@ public class MainActivity extends AppCompatActivity
                     Log.e("ADD_PROMOTIONS", "i: " + i + ", and size: " + storePromotions.size());
                     Log.e("ADD_PROMOTIONS", "Name: " + StoresData.getStoresData().get(j).getName()
                             + ", and id: " + StoresData.getStoresData().get(j).getShopID());
-                    if(StoresData.getStoresData().get(j).getPromotions().get(i).getIsActive()) {
 
-                        promotions.add(new PromotionMain(storePromotions.get(i).getId(),
-                                storePromotions.get(i).getTitle(),
-                                storePromotions.get(i).getAbout(),
-                                storePromotions.get(i).getIsActive(),
-                                storePromotions.get(i).getPicture(),
-                                storePromotions.get(i).getPrice(),
-                                storePromotions.get(i).getEndDate(),
-                                StoresData.getStoresData().get(j).getName(),
-                                StoresData.getStoresData().get(j).getShopID()
-                        ));
-                    }
+                    promotions.add(new PromotionMain(storePromotions.get(i).getId(),
+                            storePromotions.get(i).getTitle(),
+                            storePromotions.get(i).getAbout(),
+                            storePromotions.get(i).getIsActive(),
+                            storePromotions.get(i).getPicture(),
+                            storePromotions.get(i).getPrice(),
+                            storePromotions.get(i).getEndDate(),
+                            StoresData.getStoresData().get(j).getName(),
+                            StoresData.getStoresData().get(j).getShopID()
+                    ));
                 }
             }
         }
@@ -560,9 +558,9 @@ public class MainActivity extends AppCompatActivity
 
             Log.e("FORMAT_DATE_PROM","Day: "+day+" , month: "+month+", year:"+year);
 
-            String completeDate = "Valid until: ".concat(day)
+            String completeDate = "Valid until: ".concat(getMonth(month))
                     .concat(" ")
-                    .concat(getMonth(month))
+                    .concat(day)
                     .concat(" ")
                     .concat(year);
 

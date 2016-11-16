@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">ProMotion</string>
-    <string name="btn_Aceptar">Aceptar</string>
-    <string name="btn_abrir_ventana">siguiente</string>
+    <string name="btn_Aceptar">Ok</string>
+    <string name="btn_abrir_ventana">Next</string>
     <string name="welcome_text">Estos son mis posts</string>
     <string name="Tittle_Notification">ProMotion Notification</string>
 
@@ -11,10 +11,10 @@
     <string name="action_settings">Settings</string>
     <string name="app_label">Search</string>
     <string name="search_hint">Search Me</string>
-    <string name="search">Buscar</string>
+    <string name="search">Search</string>
     <string name="title_activity_near">TO CLOSER</string>
     <string name="title_activity_promotion_detail">PromotionDetailActivity</string>
-    <string name="text_share">Descarga ya ProMotion App!! La mejor app para promociones ahora https://play.google.com/store?hl=en</string>
+    <string name="text_share">Download now ProMotion App !! The best app for promotions now https://play.google.com/store?hl=en</string>
     <string name="app_description">En ProMotion App podras encontrar las mejores ofertas en promociones publicadas por comercios afiliados a nuestro portal, asi como tambien podras ubicarlos y mucho mas...</string>
     <string name="app_description2">In ProMotion App will find the bests offers and promotions published by affiliated commerces in our portal. Also can locate stores and more. </string>
     <string name="contactanos">Puedes contactarnos a por correo electronico o a traves de una simple llamada a nuestra central telefonica:</string>
@@ -32,9 +32,9 @@
 
     <string name="start">HOME</string>
     <string name="category">CATEGORIES</string>
-    <string name="toCloser">TO CLOSER</string>
+    <string name="toCloser">CLOSER</string>
     <string name="share">SHARE</string>
-    <string name="us">US</string>
+    <string name="us">ABOUT US</string>
     <string name="configuration">SETTINGS</string>
     <string name="exit">EXIT</string>
     <string name="titleShare">Share and contact</string>
@@ -58,6 +58,12 @@
     <string name="each_minute_text">Each minute</string>
     <string name="each_hour_text">Each hour</string>
     <string name="everyday_text">Everyday</string>
+
+    <string name="leave_app">Are you sure you want to leave Promotion App?</string>
+    <string name="ok_leave">Ok to leave!</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
 
 
 </resources>

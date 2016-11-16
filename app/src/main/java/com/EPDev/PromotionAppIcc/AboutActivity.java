@@ -81,11 +81,11 @@ public class AboutActivity extends AppCompatActivity implements NavigationView.O
     public void llamar(final String tel, final String storeName) {
         final Context context = this;
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-        alertDialogBuilder.setTitle("¿Esta seguro que desea llamar a "+storeName+"?");
+        alertDialogBuilder.setTitle("Are you sure you want to call "+storeName+"?");
         alertDialogBuilder
-                .setMessage("Aceptar para llamar!")
+                .setMessage("Ok to call!")
                 .setCancelable(false)
-                .setPositiveButton("Aceptar",
+                .setPositiveButton("Ok",
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
                                 moveTaskToBack(true);
@@ -107,7 +107,7 @@ public class AboutActivity extends AppCompatActivity implements NavigationView.O
                             }
                         })
 
-                .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
 
                         dialog.cancel();
@@ -133,11 +133,11 @@ public class AboutActivity extends AppCompatActivity implements NavigationView.O
         emailIntent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.text_email));
 
         try {
-            startActivity(Intent.createChooser(emailIntent, "Envio email..."));
+            startActivity(Intent.createChooser(emailIntent, "Email sent..."));
             Log.i("ENVIO_EMAIL", "");
         }
         catch (android.content.ActivityNotFoundException ex) {
-            Toast.makeText(AboutActivity.this, "No se pudo enviar el correo, intente de nuevo", Toast.LENGTH_SHORT).show();
+            Toast.makeText(AboutActivity.this, "Mail could not be sent", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -225,7 +225,7 @@ public class AboutActivity extends AppCompatActivity implements NavigationView.O
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
             intent.putExtra(Intent.EXTRA_TEXT, getResources().getText(R.string.text_share));
-            startActivity(Intent.createChooser(intent, "Compartir con"));
+            startActivity(Intent.createChooser(intent, "Share With"));
 
         }else if (id == R.id.nav_near_layout) {
             // Handle the stores action
@@ -234,18 +234,18 @@ public class AboutActivity extends AppCompatActivity implements NavigationView.O
 
         }else if (id == R.id.nav_close){
             AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
-            alertDialogBuilder.setTitle("Esta seguro que desea salir de ProMotion App?");
+            alertDialogBuilder.setTitle(getResources().getText(R.string.leave_app));
             alertDialogBuilder
-                    .setMessage("Aceptar para salir!")
+                    .setMessage(getResources().getText(R.string.ok_leave))
                     .setCancelable(false)
-                    .setPositiveButton("Aceptar",
+                    .setPositiveButton(getResources().getText(R.string.ok),
                             new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int id) {
                                     moveTaskToBack(true);
                                 }
                             })
 
-                    .setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+                    .setNegativeButton(getResources().getText(R.string.cancel), new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
 
                             dialog.cancel();

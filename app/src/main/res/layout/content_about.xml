@@ -14,17 +14,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="4dp"
+            android:layout_height="2dp"
             android:background="@color/fucsia"></FrameLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:background="@color/black_plomo"
-            android:padding="10dp"
-            android:gravity="">
+            android:layout_height="200dp"
+            android:background="@mipmap/background_white_shadow"
+            android:padding="5dp"
+            >
 
+            <!--
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
@@ -32,21 +35,16 @@
                 android:src="@mipmap/promotion"
                 android:scaleType="centerCrop"
                 android:layout_centerHorizontal="true"
-                />
+                />-->
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/about_welcome"
-                android:textColor="#FFFFFF"
-                android:layout_marginTop="110dp"
-                android:textAlignment="center"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                android:fontFamily="sans-serif-smallcaps"
-                />
+
 
         </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/fucsia"></FrameLayout>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -188,7 +186,7 @@
                         android:textStyle="bold"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:background="@color/black_plomo"/>
+                        android:background="@color/black"/>
 
                     <TextView
                         android:layout_width="match_parent"
@@ -229,7 +227,7 @@
                         android:textStyle="bold"
                         android:paddingTop="5dp"
                         android:paddingBottom="5dp"
-                        android:background="@color/black_plomo"/>
+                        android:background="@color/black"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -280,12 +278,14 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="@string/phone_label_text"
+                                    android:fontFamily="sans-serif-smallcaps"
                                     android:textStyle="bold"
 
                                     />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-smallcaps"
                                     android:text=" (+58) (212) 693-82-28"
                                     />
                             </LinearLayout>

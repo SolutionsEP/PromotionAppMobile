@@ -16,7 +16,7 @@
         android:name=".MyApplication"
         android:allowBackup="true"
         android:fontFamily="sans-serif-smallcaps"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/hppy_logo_shadow"
         android:label="@string/app_name"
         android:persistent="true"
         android:supportsRtl="true"
@@ -36,7 +36,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="ProMotion App"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,7 +52,7 @@
         <activity
             android:name=".StoresActivity"
             android:fontFamily="sans-serif-smallcaps"
-            android:label="@string/category"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -67,7 +67,7 @@
         <activity
             android:name=".AboutActivity"
             android:fontFamily="sans-serif-smallcaps"
-            android:label="@string/us" />
+            android:label="" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -83,7 +83,7 @@
         <activity
             android:name=".NearActivity"
             android:fontFamily="sans-serif-smallcaps"
-            android:label="@string/title_activity_near" />
+            android:label="" />
         <activity android:name=".StoreDetailActivity" />
         <activity
             android:name=".PromotionDetailActivity"

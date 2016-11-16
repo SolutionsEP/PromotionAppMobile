@@ -37,7 +37,7 @@ public class PromotionDetailActivity extends AppCompatActivity {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/plain");
                 intent.putExtra(Intent.EXTRA_TEXT, getResources().getText(R.string.text_share));
-                startActivity(Intent.createChooser(intent, "Compartir con"));
+                startActivity(Intent.createChooser(intent, "Share With"));
             }
         });
     }
@@ -139,9 +139,9 @@ public class PromotionDetailActivity extends AppCompatActivity {
 
         Log.e("FORMAT_DATE_PROM","Day: "+day+" , month: "+month+", year:"+year);
 
-        String completeDate = "Valid until: ".concat(day)
+        String completeDate = "Valid until: ".concat(getMonth(month))
                 .concat(" ")
-                .concat(getMonth(month))
+                .concat(day)
                 .concat(" ")
                 .concat(year);
 

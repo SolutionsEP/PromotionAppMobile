@@ -228,7 +228,7 @@ public class BeaconNotificationsManager{
             Log.e("GET_BUNDLE",bundle.getString("promotion_selected_id"));
 
             NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
-                    .setSmallIcon(R.mipmap.ic_launcher)
+                    .setSmallIcon(R.mipmap.hppy_logo_shadow)
                     .setContentTitle(Tittle)
                     .setContentText(message)
                     .setDefaults(NotificationCompat.DEFAULT_ALL)
