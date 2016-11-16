@@ -189,7 +189,7 @@ public class MainActivity extends AppCompatActivity
         //Image Button Restaurant
         //http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/restaurante.png
         imgBtnRest = (ImageButton)findViewById(R.id.imageButtonRest);
-        Picasso.with(getContext()).load("http://sj.uploads.im/U1c4g.jpg").into(imgBtnRest);
+        Picasso.with(getContext()).load("http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/restaurant.jpg").into(imgBtnRest);
         imgBtnRest.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //Here u need to call the restaurants services
@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity
         //Image Button Shop
         //http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/sports_shop.png
         imgBtnShop = (ImageButton)findViewById(R.id.imageButtonShop);
-        Picasso.with(getContext()).load("http://sk.uploads.im/YS2Fv.jpg").into(imgBtnShop);
+        Picasso.with(getContext()).load("http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/clothing.jpg").into(imgBtnShop);
         imgBtnShop.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //Here u need to call the restaurants services
@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity
         //Image Button Disco
         //http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/disco.png
         imgBtnDisco = (ImageButton)findViewById(R.id.imageButtonDisco);
-        Picasso.with(getContext()).load("http://sk.uploads.im/hDC8f.jpg").into(imgBtnDisco);
+        Picasso.with(getContext()).load("http://200.74.223.98:8001/CompensarPDFs/Promotion/pics/technology.jpg").into(imgBtnDisco);
         imgBtnDisco.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 //Here u need to call the restaurants services
