@@ -280,15 +280,12 @@
                                     android:text="@string/phone_label_text"
                                     android:fontFamily="sans-serif-smallcaps"
                                     android:textStyle="bold"
-                                    android:fontFamily="sans-serif-smallcaps"
-
                                     />
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="sans-serif-smallcaps"
                                     android:text=" (+58) (212) 693-82-28"
-                                    android:fontFamily="sans-serif-smallcaps"
                                     />
                             </LinearLayout>
 
